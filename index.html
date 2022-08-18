@@ -7,8 +7,7 @@
     <title>Aprendiendo HTML con Jon Mircha</title>
     <!-- description- no mas de 165 caracteres -->
     <meta name="description" content="Curso de HTML de Jon Mircha" />
-    <link rel="stylesheet" href="assets/estilos.css">
-    
+    <link rel="stylesheet" href="assets/estilos.css" />
   </head>
   <body>
     <!-- esto es un comentario -->
@@ -94,22 +93,170 @@
 
     <hr />
     <h2>Etiquetas de Bloque vs Etiquetas de Línea</h2>
-    <div style="background-color: yellow;color: red; ">
+    <div style="background-color: yellow; color: red">
       La etiqueta de bloque por excelencia es la div, una etiqueta de bloque es
       aquella que genera saltos de linea con sus etiquetas hermanas
     </div>
-    <span style="background-color: greenyellow;">
+    <span style="background-color: greenyellow">
       La etiqueta de línea por excelencia es la span, una etiqueta de línea sólo
       ocupa el espacio necesario que tiene su contenido
     </span>
     <span> Soy otro span</span>
-    <hr>
+    <hr />
     <h2>Estilos de CSS en html</h2>
-    <hr>
+    <hr />
+
+    <h2>Imágenes</h2>
+    <img src="img/images.jpg" alt="Perro salchichas" />
+    <img src="img/nyan-cat-kawaii.gif" alt="NYAN CAT MEME GIF" />
+    <img src="img/periodic_table.png" alt="Tabla periodica de HTML" />
+    <img src="img/adidas.svg" alt="vsg" />
+    <hr />
+
+    <h2>SVG // VECTORES</h2>
+
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.3294 19L0.731323 17.9641L5.06145 15.4641L7.1029 19H1.3294Z"
+        fill="currentColor"
+      />
+      <path
+        d="M15.1858 19H9.4123L5.7935 12.7321L10.1236 10.2321L15.1858 19Z"
+        fill="currentColor"
+      />
+      <path
+        d="M23.2687 19H17.4952L10.8557 7.5L15.1858 5L23.2687 19Z"
+        fill="currentColor"
+      />
+    </svg>
+
+    <hr />
+
+    <h2>Figuras</h2>
+    <figure>
+      <img src="img/periodic_table.png" alt="Tabla de los elementos HTML" />
+      <figcaption>Tabla de los elementos HTML</figcaption>
+    </figure>
+    <hr />
+    <h2>Listas ordenadas</h2>
+    <h3>Las estaciones del año</h3>
+    <ol>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol start="3">
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol reversed>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol type="I">
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+
+    <hr />
+    <h2>lista desordenada</h2>
+    <h3>Cosas por hacer</h3>
+    <ul>
+      <li>Terminar el curso de HTML</li>
+      <li>Terminar el curso de JS</li>
+      <li>Pasear a la Luna</li>
+    </ul>
+    <ul type="square">
+      <li>Terminar el curso de HTML</li>
+      <li>Terminar el curso de JS</li>
+      <li>Pasear a la Luna</li>
+    </ul>
+    <ul type="circle">
+      <li>Terminar el curso de HTML</li>
+      <li>Terminar el curso de JS</li>
+      <li>Pasear a la Luna</li>
+    </ul>
+    <hr />
+    <h2>Lista de Definición</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Lenguaje marcado que define el contenido de la web</dd>
+      <dt>CSS</dt>
+      <dd>Lenguaje de Definición que da estilos al código HTMl</dd>
+    </dl>
+    <hr />
+    <h2>Tablas</h2>
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+      </tr>
+      <tr>
+        <td>Iñaki</td>
+        <td>Unzaga</td>
+      </tr>
+      <tr>
+        <td>Jon</td>
+        <td>Mircha</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Tabla de nombres completos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nombre</td>
+          <td>Apellido</td>
+        </tr>
+        <tr>
+          <td>Iñaki</td>
+          <td>Unzaga</td>
+        </tr>
+        <tr>
+          <td>Jon</td>
+          <td rowspan="2">Mircha</td>
+        </tr>
+        <tr>
+          <td>Jon2</td>
+        </tr>
+        <tr>
+          <td>Iñaki</td>
+          <td>Unzaga</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">nombre y apellido</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+    
+    <h2>Enlaces</h2>
+
+    <hr />
     <h2>Scripts en HTML</h2>
     <script>
       console.log("hola Estamos aprendiendo Script");
     </script>
-    <script src=""></script>
+    <script src="assets/dom.js"></script>
   </body>
 </html>

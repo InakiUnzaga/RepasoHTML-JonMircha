@@ -1,0 +1,1 @@
+console.log("invocando desde un script");
