@@ -7,6 +7,14 @@
     <title>Aprendiendo HTML con Jon Mircha</title>
     <!-- description- no mas de 165 caracteres -->
     <meta name="description" content="Curso de HTML de Jon Mircha" />
+    <!-- URL ORIGINAL -->
+    <link rel="canonical" href="https://tudominio.com/la-url/canonica" />
+    <!-- Icono chiquito el navegador -->
+    <link rel="icon" href="img/adidas.svg" />
+    <!-- Hipervinculo para celular  como aplicaccion -->
+    <link rel="apple-touch-icon" href="img/adidas.svg" />
+    <!-- Barra de direcciones (cambia color) -->
+    <meta name="theme-color" content="#FF6600">
     <link rel="stylesheet" href="assets/estilos.css" />
   </head>
   <body>
@@ -476,12 +484,121 @@
     <input type="text" readonly disabled />
     <br />
     <input type="text" placeholder="Escribí tu nombre" />
-    <br>
+    <br />
     <h3>Ejemplo de Formulario</h3>
     <h4>Formulario de login</h4>
-    <form action="" method="post">
-      
+    <!-- https://jonmircha.com/?usuario=hola&password=12314141 -->
+    <form action="https://jonmircha.com/" method="post" autocomplete="off">
+      <label for="usuario">text:</label>
+      <input
+        type="text"
+        name="usuario"
+        id="usuario"
+        placeholder="Escribe tu usuario"
+        pattern="^[A-Za-z]+$"
+        title="El campo sólo acepta letras"
+        required
+      />
+      <br />
+      <!-- <input type="text" name="email"  autocomplete="off">
+      <br> -->
+      <label for="password">password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Escribe tu password"
+        required
+      />
+      <br />
+      <input type="submit" />
+      <br />
+      <input type="reset" />
+      <br />
     </form>
+    <h4>Select, Radops y Checkbox</h4>
+    <!-- https://jonmircha.com/?idioma=es -->
+    <form action="https://jonmircha.com/">
+      <p>Elige tu idioma</p>
+      <!-- Detecta el primer selected -->
+      <select name="idioma" required>
+        <option value="" selected>Elige una opción</option>
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Frances</option>
+        <option value="pt">Portugués</option>
+      </select>
+      <!-- https://jonmircha.com/?idioma=en&lenguaje=js -->
+      <p>Elige tu lenguaje de programación favorito:</p>
+      <input type="radio" name="lenguaje" id="radio-js" value="js" required />
+      <label for="radio-js">JavaScript</label>
+      <input type="radio" name="lenguaje" id="radio-py" value="py" checked />
+      <label for="radio-py">Python</label>
+      <input type="radio" name="lenguaje" id="radio-php" value="php" />
+      <label for="radio-php">PHP</label>
+      <p>Elige tus intereses</p>
+      <!-- https://jonmircha.com/?idioma=en&lenguaje=py&intereses=finanzas&intereses=salud&intereses=politica -->
+      <label>
+        <input type="checkbox" name="intereses" value="deportes" checked />
+        Deportes
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="finanzas" />
+        Finanzas
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="salud" checked />
+        Salud
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="politica" required />
+        Politica
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="ecologia" />
+        Ecologia
+      </label>
+      <br />
+      <input type="submit" /> <input type="reset" />
+    </form>
+    <h4>Formulario de Contacto</h4>
+    <!-- FormSubmit - https://formsubmit.co/gmail.com -->
+    <form action="https://formsubmit.co/inakiunzaga88@gmail.com" method="post">
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre sólo acepta letras y espacios en blanco"
+        required
+      />
+      <br />
+      <input
+        type="email"
+        name="correo"
+        placeholder="Escribe tu correo"
+        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        title="Formato de correo invalido"
+        required
+      />
+      <br />
+      <textarea name="comentarios" cols="30" rows="10" required></textarea>
+      <br />
+      <input type="submit" /> <input type="reset" />
+    </form>
+    <br />
+    <hr />
+    <h2>Data Attributes</h2>
+    <ul>
+      <li data-id="1" data-name="spring">Primavera</li>
+      <li data-id="2" data-name="summer">Verano</li>
+      <li data-id="3" data-name="autumn">Otoño</li>
+      <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <br />
+    <hr />
+    <h2>Metaetiquetas para SEO</h2>
+
     <br /><br /><br /><br /><br /><br /><br />
     <h2 id="script">Scripts en HTML</h2>
     <script>
