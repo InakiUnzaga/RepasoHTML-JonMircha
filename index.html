@@ -10,11 +10,18 @@
     <!-- URL ORIGINAL -->
     <link rel="canonical" href="https://tudominio.com/la-url/canonica" />
     <!-- Icono chiquito el navegador -->
-    <link rel="icon" href="img/adidas.svg" />
+    <link rel="icon" href="img/periodic_table.png" />
     <!-- Hipervinculo para celular  como aplicaccion -->
     <link rel="apple-touch-icon" href="img/adidas.svg" />
     <!-- Barra de direcciones (cambia color) -->
-    <meta name="theme-color" content="#FF6600">
+    <meta name="theme-color" content="#FF6600" />
+    <!-- OPG  -->
+    <meta property="og:title" content="Aprendiendo HTML con Jon Mircha" />
+    <meta property="og:description" content="Curso de HTML de Jon Mircha" />
+    <meta property="og:image" content="https://tudominio.com/img/" />
+    <meta property="og:url" content="https://tudominio.com/index.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@unzagainaki" />
     <link rel="stylesheet" href="assets/estilos.css" />
   </head>
   <body>
@@ -39,6 +46,24 @@
       <li><a href="index.html#listaDefinicion">Lista Definición</a></li>
       <li><a href="index.html#tabla">Tabla</a></li>
       <li><a href="index.html#enlace">Enlaces</a></li>
+      <li>
+        <a href="index.html#elementosInteractivos">Elementos Interactivos</a>
+      </li>
+      <li><a href="index.html#audioVideo">Audio y video</a></li>
+      <li><a href="index.html#iframes">Iframes</a></li>
+      <li><a href="index.html#formulario">Formulario</a></li>
+      <li><a href="index.html#dataAttributes">Data Attributes</a></li>
+      <li>
+        <a href="index.html#metaSeo-Moviles"
+          >Metaetiquetas para SEO y móviles</a
+        >
+      </li>
+      <li>
+        <a href="index.html#metaRedeSociales"
+          >Metaetiquetas para Redes Sociales</a
+        >
+      </li>
+      <li><a href="index.html#accesibilidad">Accesibilidad Web</a></li>
       <li><a href="index.html#script">Script</a></li>
     </ul>
     <hr />
@@ -397,7 +422,7 @@
     <br />
     <a href="index.html#inicio">👆</a>
     <hr />
-    <h2>Iframes</h2>
+    <h2 id="iframes">Iframes</h2>
     <iframe src="home.html" frameborder="1"></iframe>
     <br />
     <iframe src="https://jonmircha.com" frameborder="1"></iframe>
@@ -426,7 +451,7 @@
     <br />
     <a href="index.html#inicio">👆</a>
     <hr />
-    <h2 class="formulario">Formulario</h2>
+    <h2 id="formulario">Formulario</h2>
     <h3>Elementos de formulario</h3>
     <input type="text" />
     <br />
@@ -587,8 +612,9 @@
       <input type="submit" /> <input type="reset" />
     </form>
     <br />
+    <a href="index.html#inicio">👆</a>
     <hr />
-    <h2>Data Attributes</h2>
+    <h2 id="dataAttributes">Data Attributes</h2>
     <ul>
       <li data-id="1" data-name="spring">Primavera</li>
       <li data-id="2" data-name="summer">Verano</li>
@@ -596,9 +622,38 @@
       <li data-id="4" data-name="winter">Invierno</li>
     </ul>
     <br />
+    <a href="index.html#inicio">👆</a>
     <hr />
-    <h2>Metaetiquetas para SEO</h2>
+    <h2 id="metaSeo-Moviles">Metaetiquetas para SEO y móviles</h2>
+    <br />
+    <a href="index.html#inicio">👆</a>
+    <hr />
+    <h2 id="metaRedeSociales">Metaetiquetas para Redes Sociales</h2>
+    <br />
+    <a href="index.html#inicio">👆</a>
+    <hr />
+    <h2 id="accesibilidad">Accesibilidad Web</h2>
+    <!--  - https://web.dev/accessible/
+  - https://html5accessibility.com/
+  - https://www.w3.org/blog/news/archives...
+  - https://www.youtube.com/channel/UCU6l... -->
+    <h3 role="title">Las estaciones del año</h3>
+    <ul role="list">
+      <li tabindex="1" role="listitem">Primavera</li>
+      <li tabindex="2" role="listitem">Verano</li>
+      <li tabindex="4" role="listitem">Otoño</li>
+      <li tabindex="3" role="listitem">Invierno</li>
+    </ul>
 
+    <a
+      role="link"
+      aria-label="En este enlace encontraras mas informacion sobre las estaciones del año"
+      href="#"
+      target="_blank"
+      >Más Informacion...</a
+    >
+    <br />
+    <a href="index.html#inicio">👆</a>
     <br /><br /><br /><br /><br /><br /><br />
     <h2 id="script">Scripts en HTML</h2>
     <script>
